@@ -29,7 +29,11 @@ class Proxy(proxy.Proxy):
         """
         return self._create(_gateway.Gateway, **attrs)
 
+<<<<<<< HEAD
     def delete_gateway(self, gateway, ignore_missing=True):
+=======
+    def delete_gateway(self, id, ignore_missing=True):
+>>>>>>> smn initialization
         """Delete a gateway
 
         :param gateway: key id or an instance of
@@ -43,8 +47,12 @@ class Proxy(proxy.Proxy):
         :returns: Gateway been deleted
         :rtype: :class:`~otcextensions.sdk.nat.v2.gateway.Gateway`
         """
+<<<<<<< HEAD
         return self._delete(_gateway.Gateway, gateway,
                             ignore_missing=ignore_missing)
+=======
+        return self._delete(_gateway.Gateway, id=id, ignore_missing=ignore_missing)
+>>>>>>> smn initialization
 
     def gateways(self, **query):
         """Return a generator of gateways
@@ -92,7 +100,11 @@ class Proxy(proxy.Proxy):
         """
         return self._create(_snat.Snat, **attrs)
 
+<<<<<<< HEAD
     def delete_snat_rule(self, snat, ignore_missing=True):
+=======
+    def delete_snat_rule(self, id, ignore_missing=True):
+>>>>>>> smn initialization
         """Delete a SNAT rule
 
         :param bool ignore_missing: When set to ``False``
@@ -104,7 +116,11 @@ class Proxy(proxy.Proxy):
         :returns: SNAT rule been deleted
         :rtype: :class:`~otcextensions.sdk.nat.v2.snat.Snat`
         """
+<<<<<<< HEAD
         return self._delete(_snat.Snat, snat, ignore_missing=ignore_missing)
+=======
+        return self._delete(_snat.Snat, id=id, ignore_missing=ignore_missing)
+>>>>>>> smn initialization
 
     def get_snat_rule(self, snat_rule):
         """Get a single SNAT rule
@@ -138,7 +154,11 @@ class Proxy(proxy.Proxy):
         """
         return self._create(_dnat.Dnat, **attrs)
 
+<<<<<<< HEAD
     def delete_dnat_rule(self, dnat, ignore_missing=True):
+=======
+    def delete_dnat_rule(self, id, ignore_missing=True):
+>>>>>>> smn initialization
         """Delete a DNAT rule
 
         :param dict attrs: Keyword arguments which will be used to delete
@@ -152,7 +172,11 @@ class Proxy(proxy.Proxy):
         :returns: DNAT rule been deleted
         :rtype: :class:`~otcextensions.sdk.nat.v2.dnat.Dnat`
         """
+<<<<<<< HEAD
         return self._delete(_dnat.Dnat, dnat, ignore_missing=ignore_missing)
+=======
+        return self._delete(_dnat.Dnat, id=id, ignore_missing=ignore_missing)
+>>>>>>> smn initialization
 
     def get_dnat_rule(self, dnat_rule):
         """Get a single DNAT rule
