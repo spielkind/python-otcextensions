@@ -104,6 +104,10 @@ OTC_SERVICES = {
         'endpoint_service_type': 'rdsv3',
         'append_project_id': True,
     },
+    'smn': {
+        'service_type': 'smn',
+        'endpoint_service_type': 'smnv2',
+    },
     'volume_backup': {
         'service_type': 'volume_backup',
         'append_project_id': True,
